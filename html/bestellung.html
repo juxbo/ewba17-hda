@@ -6,44 +6,30 @@
     </head>
     <body>
         <h1>Bestellung</h1>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="pizza.png" alt="pizza logo">
-                        Margherita
-                        4,00€
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="pizza.png" alt="pizza logo">
-                        Salami
-                        4,50€
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="pizza.png" alt="pizza logo">
-                        Hawaii
-                        5,50€
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <p>
+            <input type="image" src="pizza.png" alt="pizza logo"> Margherita 4,00€
+        </p>
+        <p>
+            <input type="image" src="pizza.png" alt="pizza logo"> Salami 4,50€
+        </p>
+        <p>
+            <input type="image" src="pizza.png" alt="pizza logo"> Hawaii 5,50€
+        </p>
 
-        <select size="10">
-            <option>Margherita</option>
-            <option>Salami</option>
-            <option>Hawaii</option>
-        </select>
+        <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" method="POST" id="bestellung">
+            <select size="10" name="auswahl" multiple>
+                <option>Margherita</option>
+                <option>Salami</option>
+                <option>Hawaii</option>
+            </select>
 
-        <p>15,00€</p>
+            <p>14,00€</p>
 
-        <p><input type="text"></p>
+            <p><input type="text" name="adresse"></p>
 
-        <button>Alle löschen</button>
-        <button>Auswahl löschen</button>
-        <button>Bestellen</button>
+            <button type="reset">Alle löschen</button>
+            <button>Auswahl löschen</button>
+            <button type="submit">Bestellen</button>
+        </form>
     </body>
 </html>
