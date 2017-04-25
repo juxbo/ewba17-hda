@@ -18,23 +18,35 @@
             <tbody>
                 <tr>
                     <td>Margherita</td>
-                    <td><input type="radio" name="1" checked></td>
-                    <td><input type="radio" name="1"></td>
-                    <td><input type="radio" name="1"></td>
+                    <td>
+						<form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" method="POST" id="margherita">
+							<input type="radio" name="margherita1" value="bestellt" onclick="document.forms['margherita'].submit();" checked>
+							<input type="radio" name="margherita1" value="im Ofen" onclick="document.forms['margherita'].submit();">
+							<input type="radio" name="margherita1" value="fertig" onclick="document.forms['margherita'].submit();">
+						</form>
+					</td>
                 </tr>
 
                 <tr>
                     <td>Salami</td>
-                    <td><input type="radio" name="2" checked></td>
-                    <td><input type="radio" name="2"></td>
-                    <td><input type="radio" name="2"></td>
+                    <td>
+						<form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" method="POST" id="salami">
+							<input type="radio" name="salami1" value="bestellt" onclick="document.forms['salami'].submit();" checked>
+							<input type="radio" name="salami1" value="im Ofen" onclick="document.forms['salami'].submit();">
+							<input type="radio" name="salami1" value="fertig" onclick="document.forms['salami'].submit();">
+						</form>
+					</td>
                 </tr>
 
                 <tr>
                     <td>Hawaii</td>
-                    <td><input type="radio" name="3" checked></td>
-                    <td><input type="radio" name="3"></td>
-                    <td><input type="radio" name="3"></td>
+                    <td>
+						<form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" method="POST" id="hawaii">
+							<input type="radio" name="hawaii1" value="bestellt" onclick="document.forms['hawaii'].submit();" checked>
+							<input type="radio" name="hawaii1" value="im Ofen" onclick="document.forms['hawaii'].submit();">
+							<input type="radio" name="hawaii1" value="fertig" onclick="document.forms['hawaii'].submit();">
+						</form>
+					</td>
                 </tr>
             </tbody>
         </table>
