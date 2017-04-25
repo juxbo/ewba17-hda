@@ -6,15 +6,32 @@
     </head>
     <body>
         <h1>Bestellung</h1>
-        <p>
-            <input type="image" src="pizza.png" alt="pizza logo"> Margherita 4,00€
-        </p>
-        <p>
-            <input type="image" src="pizza.png" alt="pizza logo"> Salami 4,50€
-        </p>
-        <p>
-            <input type="image" src="pizza.png" alt="pizza logo"> Hawaii 5,50€
-        </p>
+        <table>
+			<thead>
+				<tr>
+					<th>Bild</th>
+					<th>Name</th>
+					<th>Preis</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="image" src="pizza.png" alt="pizza logo"></td>
+					<td>Margherita</td>
+					<td>4,00€</td>
+				</tr>
+				<tr>
+					<td><input type="image" src="pizza.png" alt="pizza logo"></td>
+					<td>Hawaii</td>
+					<td>4,50€</td>
+				</tr>
+				<tr>
+					<td><input type="image" src="pizza.png" alt="pizza logo"></td>
+					<td>Tonno</td>
+					<td>5,50€</td>
+				</tr>
+			</tbody>
+        </table>
 
         <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" method="POST" id="bestellung">
             <select size="10" name="auswahl" multiple>
