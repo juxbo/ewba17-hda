@@ -3,30 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>Bestellung</title>
+		<link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>Bestellung</h1>
         <table>
 			<thead>
 				<tr>
-					<th>Bild</th>
-					<th>Name</th>
-					<th>Preis</th>
+					<th class="third">Bild</th>
+					<th class="third">Name</th>
+					<th class="third">Preis</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td><input type="image" src="pizza.png" alt="pizza logo"></td>
+					<td><input type="image" value="Margherita" src="pizza.png" alt="pizza logo" class="btnOrder"></td>
 					<td>Margherita</td>
 					<td>4,00€</td>
 				</tr>
 				<tr>
-					<td><input type="image" src="pizza.png" alt="pizza logo"></td>
+					<td><input type="image" value="Hawaii" src="pizza.png" alt="pizza logo" class="btnOrder"></td>
 					<td>Hawaii</td>
 					<td>4,50€</td>
 				</tr>
 				<tr>
-					<td><input type="image" src="pizza.png" alt="pizza logo"></td>
+					<td><input type="image" value="Tonno" src="pizza.png" alt="pizza logo" class="btnOrder"></td>
 					<td>Tonno</td>
 					<td>5,50€</td>
 				</tr>
@@ -34,19 +35,20 @@
         </table>
 
         <form action="https://www.fbi.h-da.de/cgi-bin/Echo.pl" method="POST" id="bestellung">
-            <select size="10" name="auswahl" multiple>
+            <select size="10" name="auswahl" id="shoppingCart" multiple>
                 <option>Margherita</option>
-                <option>Salami</option>
                 <option>Hawaii</option>
             </select>
 
-            <p>14,00€</p>
+            <p id="price">8,50€</p>
 
-            <p><input type="text" name="adresse"></p>
+            <p><input type="text" name="adresse" required></p>
 
-            <button type="reset">Alle löschen</button>
-            <button>Auswahl löschen</button>
+            <button type="reset" id="btnDeleteAll">Alle löschen</button>
+            <button type="button" id="btnDeleteSelected">Auswahl löschen</button>
             <button type="submit">Bestellen</button>
         </form>
+
+		<script src="bestellung.js"></script>
     </body>
 </html>
