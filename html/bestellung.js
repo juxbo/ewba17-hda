@@ -29,7 +29,8 @@ function updatePrice() {
 }
 
 document.querySelector('#btnDeleteAll').addEventListener('click', function(event) {
-    var cartItems = shoppingCart.options.length = 0;
+    shoppingCart.options.length = 0;
+    updatePrice();
 });
 
 document.querySelector('#btnDeleteSelected').addEventListener('click', function(event) {
@@ -38,4 +39,5 @@ document.querySelector('#btnDeleteSelected').addEventListener('click', function(
             shoppingCart.options[i] = null;
         }
     }
+    updatePrice();
 })

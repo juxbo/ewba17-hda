@@ -4,10 +4,17 @@
 
 body {
     padding: 0px 15px 0px 15px;
+    background: whitesmoke;
 }
 
 th {
     text-align: left;
+}
+
+.btnOrder {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .third {
