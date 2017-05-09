@@ -36,3 +36,15 @@ th {
 .full-width {
     width: 100%;
 }
+
+@media(max-width: 760px) {
+    .content {
+        width: 400px;
+    }
+}
+
+@media(max-width: 440px) {
+    .content {
+        width: 340px;
+    }
+}
