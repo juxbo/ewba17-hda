@@ -10,7 +10,7 @@ priceList.set("Tonno", 5.5);
 
 for(var button of buttons) {
     button.addEventListener('click', function(event) {
-        var pizza = event.srcElement.value;
+        var pizza = event.target.value;
         var option = document.createElement('option');
         option.text = pizza;
         shoppingCart.add(option);
